@@ -1,0 +1,24 @@
+GET http://127.0.0.1:5000/product
+
+###
+POST http://127.0.0.1:5000/product
+Content-Type: application/json
+
+{
+    "productName" : "Laptop",
+    "price" : "6000000",
+    "category" : "Electronik"
+}
+
+###
+PATCH http://127.0.0.1:5000/product/6360bcc63e5bcb42322e78c3
+Content-Type: application/json
+
+{
+    "productName" : "Apa iya",
+    "price" : "1jt",
+    "category" : "apa aja"
+}
+
+###
+DELETE http://127.0.0.1:5000/product/635f81d06786ffcf2b02fc06
